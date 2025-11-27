@@ -1,0 +1,28 @@
+-- CREATE DATABASE STUDENTS;
+-- USE STUDENTS;
+-- CREATE TABLE STUDENTS (NAME VARCHAR(25), LASTNAME VARCHAR(25), GRADE INT);
+-- INSERT INTO STUDENTS (NAME, LASTNAME, GRADE) VALUE ("LUIS", "SMITH", 87);
+-- INSERT INTO STUDENTS (NAME, LASTNAME, GRADE) VALUE ("JESSICA", "CARTER", 92);
+-- INSERT INTO STUDENTS (NAME, LASTNAME, GRADE) VALUE ("JOHN", "PETERSON", 99);
+-- INSERT INTO STUDENTS (NAME, LASTNAME, GRADE) VALUE ("PETER", "COX", 89);
+-- INSERT INTO STUDENTS (NAME, LASTNAME, GRADE) VALUE ("RONALD", "OLSON", 79);
+-- SELECT NAME FROM STUDENTS WHERE NAME LIKE'J%' ORDER BY NAME DESC;
+-- SELECT NAME, GRADE FROM STUDENTS WHERE GRADE LIKE '9%';
+-- SELECT NAME, GRADE FROM STUDENTS WHERE GRADE>=90;
+use students;
+-- create table class2 (student_id int not null auto_increment primary key,
+-- last_name varchar(50),
+-- first_name varchar (50), 
+-- phone_number varchar (15), 
+-- state varchar (2), 
+-- grade int);
+-- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Klassen','Karen','5555555555','UT',56);
+-- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Doe','John','1234567890','TX',43);
+-- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Smith','Jane','12378904567','GA',22);
+-- select last_name,first_name,phone_number,state,grade from class2;
+-- update class2 set grade=23 where student_id=2;
+-- delete from class2 where student_id=3;
+-- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Smith','Eric','1111111111','UT',26);
+-- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Doe','Marcus','2222222222','UT',26);
+-- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Smith','Kylie','3333333333','UT',19);
+select first_name, last_name, grade from class2 where student_id>=2
