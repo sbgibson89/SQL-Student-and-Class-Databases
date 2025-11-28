@@ -25,4 +25,5 @@ use students;
 -- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Smith','Eric','1111111111','UT',26);
 -- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Doe','Marcus','2222222222','UT',26);
 -- insert into class2 (last_name, first_name, phone_number, state, grade) values ('Smith','Kylie','3333333333','UT',19);
-select first_name, last_name, grade from class2 where student_id>=2
+insert into class2 (last_name, first_name, phone_number, state, grade) values ('Bennett', 'Alex', '4444444444', 'UT',54);
+select first_name, last_name, grade from class2 where student_id>=5
